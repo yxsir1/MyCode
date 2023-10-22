@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: url("study.jpg");
+            background-size: 280%;
+            background-position: -480px 0px;
+        }
+        div#form-container {
+            width: 400px;
+            margin: 100px auto 0 auto;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        div.register {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+        form {
+            margin: 40px;
+        }
+        label {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+        input {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: 0;
+            padding: 7px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        input#submit {
+            width: 200px;
+            padding: 7px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(250, 100, 0, 0.8);
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        label,
+        span,
+        h1 {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="form-container">
+        <h1>Registration Form</h1>
+        <form action="#" method="post" id="register">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender</label>
+            <div class="gender-label">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div class="gender-label">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="gender-label">
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <label for="profile-picture">Profile Picture</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the Terms and Conditions
+            </label>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
