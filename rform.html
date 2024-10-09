@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head> 
+<title>Form</title>
+</head>
+<body>
+<h1 id="title">Survey  Form</h1>
+
+<p id="description">Do suggest us by filling this survey form</p>
+<div class="part1">
+<form id="survey-form">
+<label id="name-label">Name:<input type="text" id="name" required placeholder="Enter your name"></label><br/><br/>
+<label id="email-label">Email:<input type="email" id="email" required placeholder="Enter your mail id"></label><br/><br/>
+<label id="number-label">Phone:<input type="number" id="number" min="1" max="1000000000000000000" required placeholder="Enter your number"></label><br/><br/>
+</div>
+
+<div class="part2">
+<label id="select-label">Which language did you select for learning?</label>
+</div> 
+
+<div class="part3">
+<select id="dropdown" for="survey-form">
+  <option>(Select one)</option>
+  <option>HTML</option>
+  <option>CSS</option>
+  <option>JAVASCRIPT</option>
+  <option>C++</option>
+  <option>PYTHON</option>
+</select><br/><br/>
+</div> 
+
+<div class="part4">
+<label id="radio-label">Are you willing to continue learning from us further?</label><br/><br/>
+</div>
+
+<div class="part5">
+<input type="radio" checked name="yes" value="yes">Yes<br/>
+<input type="radio" name="no" value="no">No<br/>
+<input type="radio" name="maybe" value="maybe">Maybe <br/><br/>
+</div>
+
+<div class="part6">
+<label id="checkbox-label">Which programming languages do you wish to learn with us in future?(check all that applies)</label><br/>
+</div>
+
+<div class="part7">
+<input type="checkbox" value="php">PHP<br/>
+<input type="checkbox" value="go">GO<br/>
+<input type="checkbox" value="java">JAVA<br/>
+<input type="checkbox" value="c#">C#<br/>
+<input type="checkbox" value="xml">XML<br/>
+<input type="checkbox" value="c">C<br/>
+<input type="checkbox" value="mern">MERN<br/>
+<input type="checkbox" value="bash">BASH<br/>
+<input type="checkbox" value="sql">SQL<br/>
+<input type="checkbox" value="juniper">JUNIPER<br/><br/>
+</div>
+
+<div class="part8">
+<label id="textarea-label">Suggest a feedback...<br/>
+</div>
+<div class="part9">
+<textarea id="comment" rows="5" cols="40" placeholder="Comment here"></textarea>
+</div>
+
+<div class="part10">
+<button id="submit" for="survey-form">Submit</button>
+</div>
+</form>
+</body>
+</html>
